@@ -7,26 +7,33 @@
     <title>Kai Sano</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;500&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <nav class="main-nav">
-        <ul class="nav">
-          <li class="name">Kai Sano</li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <header>
-      <img src="images/responsive-layout-profile.png" alt="my profile pic" class="profile-image">
-      <p class="About-me">Hi! I'm a front-end developer who loves responsive design and css. 
-                        I recently finished front end web development at Treehouse and am excited to put all my skills to use!</p>
+
+<body>
+    <header class=main-header>
+        <nav class="main-nav">
+            <h1 class="name"><a href="#">Kai Sano</a></h1>
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main id="portfolio">
-        <h1>Portfolio</h1>
+      <div class="banner">
+        <img class="profile-image" src="images/responsive-layout-profile.png" alt="my profile pic" >
+      <p class="about-me">Hi! I'm a front-end developer who loves responsive design and css. 
+                        I recently finished front end web development at Treehouse and am excited to put all my skills to use!</p>
+    </div>
+    
+
+    <main class="portfolio">
+        <h1 class="port">Portfolio</h1>
 
         <section>
             <div class="marketing">
@@ -67,17 +74,17 @@
         </section>
     </main>
 
-        <div id="contact">
+        <div class="contact">
             <h1>Contact</h1>
             <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you! </p>
             <p><strong>Phone</strong> 444-555-6666</p>
-            <p><strong>Email</strong><a href="mailto:kaisano46@gmail.com"> kaisano46@myportfolio.com</a></p>
+            <p class = "email"><strong>Email </strong><a href="mailto:kaisano46@gmail.com">My Porfolio</a></p>
         </div>
 
-    <footer>
+    <footer class="main-footer">
         <nav class="second-nav">
             <ul class="nav">
-              <li class="name">Kai Sano</li>
+              <p class="name">Kai Sano</p>
               <li><a href="#top">Home</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#contact">Contact</a></li>
