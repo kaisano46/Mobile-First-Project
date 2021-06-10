@@ -1,114 +1,275 @@
-/* ================================= 
-  Base Element Styles
-==================================== */
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 
 body{
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
-    margin:0;
+    color: #093a58;
+    margin: 0;
 }
 
-ul {
+ul{
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-  p {
-      font-size: .95em;
-      margin-bottom: 1.8em;
-  }
-  h2,
-  h3,
-  a {
-      color: #093a58;
-  }
-  h2,
-  h3 {
-      margin-top: 0;
-  }
-  a {
-      text-decoration: none;
-  }
-  img {
-      max-width: 100%;
-  }
+}
+p {
+	font-size: .95em;
+	margin-bottom: 2em;
+}
+h2,
+h3,
+a {
+	color: #093a58;
+}
+h2,
+h3 {
+	margin-top: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
-/* ---- Navigation ---- */
 
-.main-nav{
+/* ---- Navigation ---- */
+.name {
+	font-size: 1.35em;
+	margin: 0;
+}
+.main-nav {
 	margin-top: 5px;
 }
 .name a,
-.nav a {
+.main-nav a {
 	text-align: center;
 	display: block;
-	padding: 5px 15px;
+	padding: 10px 15px;
+}
+.main-nav a {
 	font-size: .95em;
-    text-transform: uppercase;
-}   
+	text-transform: uppercase;
+}
+.main-nav a:hover {
+	color: #093a58;
+}
+
+.nav-item{
+    background-color: rgba(245, 255, 250,0.8);
+    margin: .5em;
+}
+
+.bottom{
+    padding-top: .5em;
+}
+.bottom-name{
+    margin-left: 1em;
+
+}
+.top{
+    float: right;
+    margin-right: 1em;
+}
+.hide{
+    display: none;
+
+}
+
+
 
 /* ---- Layout Containers ---- */
 
 .main-header {
+    background-color: rgba(217, 228, 234,.3);
 	padding-top: .5em;
 	padding-bottom: .5em;
-    background-color:mintcream;
 }
 
-.banner,
-.main-footer {
-	text-align: center;
-}
 
 .banner {
-	background-color: mintcream;
-	padding: 1em 0;
-	margin-bottom: 20px;
+	color: #093a58;
+	padding: 25px 1em 15px 1em;
+	margin: 0 auto;
+    text-align: center;
 }
 
-.main-footer {
-	background-color: mintcream;
-	padding: 1rem 0;
-	margin-top: 0;
+.port{
+    text-align: center;
+    padding: 1em 0 1em 0;
+}
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+    text-align: center;
 }
 
 .contact{
+    margin-bottom: 0;
+    padding: 15px 1em 15px 1em;
     text-align: center;
-    background-color: mintcream;
-	padding: 1rem 0;
-	margin-top: 10px;
+}
+.main-footer {
+    background-color: rgba(217, 228, 234,.3);
+	padding: .5em .5em 1em .5em;
+	margin-top: 0;
+}
+.phone{
     margin-bottom: 0;
 }
-
+.email{
+    margin-bottom: 2em;
+}
 .email a:link{
-    color:teal;
+    color: teal;
 }
 .email a:visited{
-    color:lavender;
+    color:wheat;
 }
 .email a:hover{
     text-decoration: underline;
+    color: tomato;
 }
+
+.skills{
+    width: 100%;
+    font-family: 'Zilla Slab','Raleway', serif;
+    background-color:rgba(255, 250, 240,.5);
+    padding: 2em 0 2em 0;
+    text-align: center;
+
+}
+
+.skill1{
+    padding: .5em;
+    background: linear-gradient(to right, #7BC6CC, #BE93C5); 
+    border: ridge;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
 /* ---- Page Elements ---- */
 
-.profile-image{
+.profile{
     width: 320px;
 }
 
+/* ================================= 
+  Media Queries
+==================================== */
 
-
-/* Media Queries */
-@media (min-width:769px) {
-    main{
-        width: 90%;
-        max-width: 1000px;
-        margin: 0 auto;
-
+@media (min-width: 769px) {
+    
+    .main-header,
+    .portfolio {
+        width: 100%;
+		margin: 0 auto;}
+   
+    .main-nav{
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
     }
 
+    .name a, .main-nav a {
+        padding: 5px 15px;
+    }
+
+    .nav-item{
+        background-color: transparent;
+    }
+
+    .banner{
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1000px;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .about-me{
+        display: flex;
+        font-size: 1.3em;
+        text-align: left;
+    }
+
+    .main-content{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .col{
+        flex: 1 300px;
+    }
+
+    .top{
+        display: none;
+    }
+    .bottom,
+    .hide{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 1em;
+    }
+    .nav-item2{
+        margin-right: 2em;
+    }
+
+    .languages{
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    .skill1{
+        margin: 1em;
+    }
+}
+
+@media (min-width: 1025px) {
+	.main-header,
+	.portfolio {
+		width: 100%;
+        margin: 0 auto;
+        
+	}
+    
+    .main-header,
+    .main-nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+
+    .banner{
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1000px;
+        justify-content: space-between;
+        
+}
+
+    .about-me{
+        font-size: 1.3em;
+        text-align: left;
+        margin-right: 1em;
+}
+
+    .main-content{
+        display: flex;
+        flex-wrap: wrap;
+
+}
+    .col{
+        flex: 1 400px;
+}
 }

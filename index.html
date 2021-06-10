@@ -8,90 +8,108 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
 </head>
 
 
 
 <body>
-    <header class=main-header>
-        <nav class="main-nav">
-            <h1 class="name"><a href="#">Kai Sano</a></h1>
-            <ul class="nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-      <div class="banner">
-        <img class="profile-image" src="images/responsive-layout-profile.png" alt="my profile pic" >
-      <p class="about-me">Hi! I'm a front-end developer who loves responsive design and css. 
-                        I recently finished front end web development at Treehouse and am excited to put all my skills to use!</p>
-    </div>
+    <header class= "main-header">
+        <h1 class="name"><a href="#">Kai Sano</a></h1>
+        <nav>
+             <ul class="main-nav">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>   
+        </nav>      
     
 
-    <main class="portfolio">
-        <h1 class="port">Portfolio</h1>
+        <div class="banner">
+            <img class="profile" src="images/responsive-layout-profile.png" alt="profile pic" >
+            <p class="about-me">Hi! I'm a front-end developer who loves responsive design and css. 
+                            I recently finished front end web development at Treehouse and am excited to put all my skills to use!</p>
+        </div>
+        
+    </header> <!--Main Header-->
 
-        <section>
-            <div class="marketing">
-                <img src="images/portfolio-1.png" alt="pic of marketing page">
-                <h2>Marketing Page</h2>
-                <p>This project shows a front page of a marketing website meant for specific business I'm interested in.</p>
-            </div>
+    <main class="portfolio" id="portfolio">
+            <section>
+                <h1 class="port">Portfolio</h1>
+            <div class="main-content">
+                <div class="marketing col">
+                    <img src="images/portfolio-1.png" alt="pic of marketing page">
+                    <h2>Marketing Page</h2>
+                    <p>This project shows a front page of a marketing website meant for specific business I'm interested in.</p>
+                </div>
 
-            <div class="search">
-                <img src="images/portfolio-2.png" alt="pic of search page">
-                <h2>Search Page</h2>
-                <p>This project searches through a specific database to find information that user is trying to look up.</p>
-            </div>
+                <div class="search col">
+                    <img src="images/portfolio-2.png" alt="pic of search page">
+                    <h2>Search Page</h2>
+                    <p>This project searches through a specific database to find information that user is trying to look up.</p>
+                </div>
 
-            <div class="Travel">
-                <img src="images/portfolio-3.png" alt="pic of travel app">
-                <h2>Travel App</h2>
-                <p>This project compares travel times based on different transportation method and tells you the best one.</p>
-            </div>
+                <div class="travel col">
+                    <img src="images/portfolio-3.png" alt="pic of travel app">
+                    <h2>Travel App</h2>
+                    <p>This project compares travel times based on different transportation method and tells you the best one.</p>
+                </div>
 
-            <div class="map">
-                <img src="images/portfolio-4.png" alt="pic of map page">
-                <h2>Map of Favorite Spots</h2>
-                <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour. </p>
-            </div>
+                <div class="map col">
+                    <img src="images/portfolio-4.png" alt="pic of map page">
+                    <h2>Map of Favorite Spots</h2>
+                    <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour. </p>
+                </div>
 
-            <div class="photo">
-                <img src="images/portfolio-5.png" alt="pic of photo gallery page">
-                <h2>Photo Gallery</h2>
-                <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos. </p>
-            </div>
+                <div class="photo col">
+                    <img src="images/portfolio-5.png" alt="pic of photo gallery page">
+                    <h2>Photo Gallery</h2>
+                    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos. </p>
+                </div>
 
-            <div class="calculator">
-                <img src="images/portfolio-6.png" alt="pic of calculator page">
-                <h2></h2>
-                <p>Some one can enter in the numbers the want, and press the big blue button and get the results. </p>
+                <div class="calculator col">
+                    <img src="images/portfolio-6.png" alt="pic of calculator page">
+                    <h2>Calculator</h2>
+                    <p>Some one can enter in the numbers the want, and press the big blue button and get the results. </p>
+                </div>
             </div>
-        </section>
+            </section>
     </main>
 
-        <div class="contact">
-            <h1>Contact</h1>
-            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you! </p>
-            <p><strong>Phone</strong> 444-555-6666</p>
-            <p class = "email"><strong>Email </strong><a href="mailto:kaisano46@gmail.com">My Porfolio</a></p>
-        </div>
+    <div class="skills">
+        <h2>Software Skills</h2>
+        <ul class="languages">
+            <li class="skill1">HTML, CSS</li>
+            <li class="skill1">JavaScript</li>
+            <li class="skill1">Reactjs</li>
+            <li class="skill1">Vuejs</li>
+        </ul>
+        
+
+    </div>
 
     <footer class="main-footer">
-        <nav class="second-nav">
-            <ul class="nav">
-              <p class="name">Kai Sano</p>
-              <li><a href="#top">Home</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-    </footer>
+        <div class="contact" id="contact">
+            <h1>Contact</h1>
+            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you! </p>
+            <p class="phone"><strong>Phone: &nbsp; &nbsp;</strong> +1 (444)-555-1234</p>
+            <p class = "email"><strong>Email: &nbsp;&nbsp;</strong><a href="mailto:kaisano46@gmail.com">My Email</a></p>
+        </div>
+        <hr>
+        <div class="bottom">
+            <span class="bottom-name">Kai Sano</span>
+            <span class="top"><a href="#top">Back To Top</a></span>
+            <nav>
+                <ul class="hide">
+                <li class="nav-item2"><a href="index.html">Home</a></li>
+                <li class="nav-item2"><a href="#portfolio">Portfolio</a></li>
+                <li class="nav-item2"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>   <!-- Main Footer -->
     
 </body>
 </html>
