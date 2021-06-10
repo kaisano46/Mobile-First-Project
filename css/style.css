@@ -142,7 +142,6 @@ img {
     background-color:rgba(255, 250, 240,.5);
     padding: 2em 0 2em 0;
     text-align: center;
-
 }
 
 .skill1{
@@ -151,7 +150,6 @@ img {
     border: ridge;
     width: 80%;
     margin: 0 auto;
-
 }
 
 /* ---- Page Elements ---- */
@@ -164,7 +162,7 @@ img {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     
     .main-header,
     .portfolio {
@@ -190,7 +188,6 @@ img {
         flex-direction: row-reverse;
         max-width: 1000px;
         margin: auto;
-        flex-wrap: wrap;
         justify-content: space-between;
     }
 
@@ -234,12 +231,11 @@ img {
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 	.main-header,
 	.portfolio {
 		width: 100%;
         margin: 0 auto;
-        
 	}
     
     .main-header,
@@ -255,7 +251,6 @@ img {
         flex-direction: row-reverse;
         max-width: 1000px;
         justify-content: space-between;
-        
 }
 
     .about-me{
