@@ -108,7 +108,9 @@ img {
 	padding-left: 1em;
     text-align: center;
 }
-
+.page-header{
+    padding-top: .5em;
+}
 .contact{
     margin-bottom: 0;
     padding: 15px 1em 15px 1em;
@@ -215,7 +217,7 @@ img {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-bottom: 1em;
+        padding-bottom: .5em;
     }
     .nav-item2{
         margin-right: 2em;
