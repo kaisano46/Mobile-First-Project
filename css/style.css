@@ -195,6 +195,7 @@ img {
         display: flex;
         font-size: 1.3em;
         text-align: left;
+        margin-top: 0;
     }
 
     .main-content{
@@ -257,6 +258,7 @@ img {
         font-size: 1.3em;
         text-align: left;
         margin-right: 1em;
+        margin-top: 0;
 }
 
     .main-content{
@@ -265,6 +267,6 @@ img {
 
 }
     .col{
-        flex: 1 400px;
+        flex: 1 300px;
 }
 }
