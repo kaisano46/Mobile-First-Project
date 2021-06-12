@@ -3,6 +3,9 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
     color: #093a58;
@@ -36,6 +39,9 @@ img {
 	max-width: 100%;
 }
 
+.portfolio{
+    flex: 1;
+}
 /* ================================= 
   Base Layout Styles
 ==================================== */
