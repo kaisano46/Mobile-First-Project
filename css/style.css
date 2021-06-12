@@ -206,7 +206,7 @@ img {
 
     }
     .col{
-        flex: 1 300px;
+        flex: 1 50%;
     }
 
     .top{
@@ -265,10 +265,11 @@ img {
 
     .main-content{
         display: flex;
-        flex-wrap: wrap;
-
+        justify-content: center;
+        
 }
     .col{
-        flex: 1 300px;
+        flex: 1 33%;
 }
 }
+
